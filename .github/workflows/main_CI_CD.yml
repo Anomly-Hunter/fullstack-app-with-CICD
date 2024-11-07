@@ -35,9 +35,11 @@ jobs:
       - name: SSH to VPS and deploy
         uses: appleboy/ssh-action@v0.1.3
         with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_PASSWORD }}
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          debug: true
           script: |
             docker pull sleepdeprivedsloth/frontend:latest
             docker pull sleepdeprivedsloth/backend:latest
