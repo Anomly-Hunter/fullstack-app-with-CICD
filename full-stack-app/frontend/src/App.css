@@ -1,0 +1,77 @@
+/* Gradient background */
+body, .login-container {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0052cc, #ff0066);
+  font-family: Arial, sans-serif;
+}
+
+/* Login box */
+.login-box {
+  width: 350px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Login header */
+.login-box h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Login options */
+.options {
+  display: flex;
+  justify-content: space-between;
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.options a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+/* Login button */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #0052cc;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #f2f2f2;
+}
