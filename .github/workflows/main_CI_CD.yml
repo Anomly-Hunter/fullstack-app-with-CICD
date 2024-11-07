@@ -24,12 +24,12 @@ jobs:
 
       - name: Build and push frontend image
         run: |
-          docker build -t sleepdeprivedsloth/frontend:latest ./frontend
+          docker build -t sleepdeprivedsloth/frontend:latest ./full-stack-app/frontend
           docker push sleepdeprivedsloth/frontend:latest
 
       - name: Build and push backend image
         run: |
-          docker build -t sleepdeprivedsloth/backend:latest ./backend
+          docker build -t sleepdeprivedsloth/backend:latest ./full-stack-app/backend
           docker push sleepdeprivedsloth/backend:latest
 
       - name: SSH to VPS and deploy
